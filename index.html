@@ -12,19 +12,22 @@
         <title>Charlotte Pineau</title>
     </head>
 
-    <body class="cyan lighten-5">
+    <body class="grey lighten-4">
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="assets/js/materialize.min.js"></script>
         <script> $(document).ready(function(){
-      $('.slider').slider();
+                $('.slider').slider();
+                $(".button-collapse").sideNav();
     });
+            
         </script>
         
         
         
         <nav class="indigo">
             <div class="nav-wrapper container">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="index.html#apropos">A propos</a></li>
                 </ul>
@@ -36,11 +39,20 @@
                     <li><a href="index.htm#interetl">Centres d'intérêt</a></li>
                     <li><a href="index.html#Projets">Projets</a></li>
                 </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html#apropos">A propos</a></li>
+                    <li><a href="index.html#Formation">Formation</a></li>
+                    <li><a href="index.html#Experience">Experience</a></li>
+                    <li><a href="index.html#Competence">Compétences</a></li>
+                    <li><a href="index.htm#interetl">Centres d'intérêt</a></li>
+                    <li><a href="index.html#Projets">Projets</a></li>
+                </ul>
             </div>
         </nav>
+        
         <div class="container indigo-text text-darken-3 z-depth-5" id="apropos">
             <div class="card horizontal">
-                <div class="card-image">
+                <div class="card-image indigo lighten-5 hide-on-med-and-down">
                     <img src="assets/images/photoJS.jpg">
                 </div>
                 <div class="card-stacked">
@@ -56,6 +68,21 @@
                 </div>
             </div>
         </div>
+        
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
         
         
         
