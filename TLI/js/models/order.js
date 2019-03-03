@@ -65,9 +65,9 @@ class Order {
 
     static removeById(id){
         var ordersArray = Order.getOrders();
-
+        
         ordersArray = ordersArray.filter((order)=>{
-            return order.orderId==id;
+            return order.orderId!=id;
         })
 
         localStorage.setItem("ordersArray", JSON.stringify(ordersArray));
