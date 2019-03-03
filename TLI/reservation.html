@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agence voyage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">A propos</a>
+        </nav>
+
+        <h1>TTA - Time travel Agency</h1>
+        <p>Des voyages à tout moment !</p>
+    </header>
+    <form>
+        <h1 id="voyageTitle">Voyage selectionné: </h1>
+        <h1 id="voyagePrice">Prix par jour par adulte: </h1>
+        <fieldset>
+            <legend>Identité:</legend>
+            <div class="row">
+                <div class="s6">
+                    <label for="name">Nom</label>
+                    <br>
+                    <input id="name" type="text" name="name" placeholder="Jean">
+                    <br>
+                    <br>
+                </div>
+                <div class="s6">
+                    <label for="firstName">Prenom</label>
+                    <br>
+                    <input id="firstName" type="text" name="firstName" placeholder="Dupont">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <label for="email">Adresse e-mail</label>
+            <br>
+            <input id="email" type="text" name="email" placeholder="jean@dupont.fr">
+            <br>
+            <br>
+            <label for="phoneNumber">Téléphone</label>
+            <br>
+            <input id="phoneNumber" type="text" name="phoneNumber" placeholder="0123456789">
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Réservation:</legend>
+            <div class="row">
+                <div class="s6 date">
+                    <label for="depart">Du : </label>
+                    <input id="depart" type="date" name="depart">
+                </div>
+                <div class="s6 date">
+                    <label for="retour">au : </label>
+                    <input id="retour" type="date" name="retour">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <label for="adultNumber">Nombre d'adultes</label>
+            <br>
+            <input id="adultNumber" type="number" name="adultNumber" min="1">
+            <br>
+            <br>
+            <label for="childNumber">Nombre d'enfants (-12ans)</label>
+            <br>
+            <input id="childNumber" type="number" name="childNumber" min="0">
+            <br>
+            <br>
+            <label for="breakfast">̈Petit-déjeuner ?</label>
+            <!--<br>-->
+            <input id="breakfast" type="checkbox" name="breakfast" value="true">
+            <br>
+            <br>
+            <label for="demande">Demande de renseignement</label>
+            <br>
+            <textarea id="demande" name="demande"></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <h2 id="totalPrice"></h2>
+        <br>
+        <div class="row">
+            <div class="s6"></div>
+            <div class="s6">
+                <input id="reset" type="reset">
+                <button id="submit" type="button">Réserver</button>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div>
+            <p>Auteurs</p>
+            <div class="liste">
+                <a href="#">Charlotte Pineau</a>
+                <a href="#">Kilian Decaderincourt</a>
+            </div>
+        </div>
+        <p>Cours de TLI - TP 1</p>
+    </footer>
+</body>
+
+<script type="module" src="js/reservation.js"></script>
+<script src="js/utils.js"></script>
+
+</html>

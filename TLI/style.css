@@ -1,0 +1,329 @@
+/*
+Fonts : Raleway, Roboto
+Couleurs :
+    #3AB2A4
+    #91FFF1
+    #00FFE0
+    #B25E39
+    #FFAB86
+*/
+
+body {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.teal {
+    background-color: #3AB2A4;
+}
+
+.light-blue {
+    background-color: #91FFF1;
+    opacity: 0.6;
+}
+
+/* Header */
+
+header {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #3AB2A4;
+    box-shadow: 0 5px 10px #FFAB86;
+    display: flex;
+    justify-content: center;
+}
+
+nav a, nav button {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+nav a:hover, nav button:hover {
+    background-color: #91FFF1;
+    color: #3AB2A4
+}
+
+/* Footer */
+footer {
+    background-color: #3AB2A4;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFAB86;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Destinations */
+.destinations h2 {
+    text-align: center;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: 0.3s;
+    width: 25%;
+}
+
+.card-image img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card-content {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+
+
+.card-action {
+    background-color: #B25E39;
+    color: #FFAB86;
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Contact */
+address {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px gray;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 35%;
+    border-radius: 3px;
+}
+
+address a {
+    padding: 3px;
+    border-radius: 6px;
+}
+
+address a:hover {
+    color: #3AB2A4;
+    opacity: 1;
+}
+
+/* Connexion */
+#connexion, #inscription{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px gray;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 35%;
+    border-radius: 3px;
+    background-color: #FFAB86;
+}
+
+#connexion input[type=text], #connexion input[type=password],
+#inscription input[type=text], #inscription input[type=password]{
+    text-align: center;
+}
+
+/* Form */
+
+.valid {
+    color: green;
+    border-color: green;
+}
+
+.invalid {
+    color: red;
+    border-color: red;
+}
+
+.row .s6 {
+    width: 48%;
+}
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+fieldset {
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+    border-color: #3AB2A4;
+    margin-bottom: 5%;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=tel],
+input[type=number] {
+    border: none;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    height: 30px;
+}
+
+textarea {
+    border: none;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    height: 30px;
+}
+
+input[type=reset],
+input[type=submit],
+#submit {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+
+input[type=reset]:disabled,
+input[type=submit]:disabled,
+#submit:disabled {
+    text-decoration: none;
+    color: #fff;
+    background-color: gray;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+
+#filters {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px gray;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: 35%;
+    border-radius: 3px;
+    background-color: #3AB2A4;
+}
+.order-info{
+    display: flex;
+    border: solid 0.5px;
+    justify-content: space-evenly;
+}
+
+.order-image {
+    border-radius: 50%;
+    width: 10%;
+    height: auto;
+    align-self: center;
+    margin-left: 3%;
+}
+.order-left {
+    display: flex;
+}
+
+.order-text{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.order-price {
+    justify-self: flex-end;
+    background-color: #3AB2A4;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.orders {
+    border: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+}
+
+.centered {
+    text-align: center;
+}
+.suppression {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFAB86;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.card-recap {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px gray;
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: 25%;
+    border-radius: 3px;
+}
