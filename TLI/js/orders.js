@@ -23,7 +23,7 @@ function main(){
     ordersArray.forEach(element => {
         document.getElementById(element.orderId).onclick = () => {
             Order.removeById(element.orderId);
-            //location=location
+            location=location
         }
     })
 

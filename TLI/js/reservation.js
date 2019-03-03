@@ -1,6 +1,6 @@
-import { Customer } from './models/Customer.js';
-import { Order } from './models/Order.js';
-import { Voyage } from './Voyage.js';
+import { Customer } from './models/customer.js';
+import { Order } from './models/order.js';
+import { Voyage } from './voyage.js';
 
 // Formulaire
 var formIsValid = false;
