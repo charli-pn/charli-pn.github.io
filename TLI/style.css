@@ -7,6 +7,9 @@ Couleurs :
     #B25E39
     #FFAB86
 */
+.grand{
+    font-size: xx-large;
+}
 
 body {
     color: black;

@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <title>Agence voyage</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-<header>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="contact.html">A propos</a>
-    </nav>
+    <header>
+        <nav>
+            <p>Bienvenue <span id="champUsername"></span></p>
+            <a href="index.html">Accueil</a>
+            <a href="orders.html">Mes commandes</a>
+            <a href="contact.html">A propos</a>
+            <button id="logout">Logout</button>
+        </nav>
 
-    <h1>TTA - Time travel Agency</h1>
-    <p>Des voyages à tout moment !</p>
-</header>
+        <h1>TTA - Time travel Agency</h1>
+        <p>Des voyages à tout moment !</p>
+        <script type=module src="js/middleware/auth.js"> </script>
+    </header>
 
 <div class="card-recap">
     <h1>Résumé de votre réservation:</h1>
@@ -63,8 +68,9 @@
     </div>
     <p>Cours de TLI - TP 1</p>
 </footer>
-</body>
-
 <script type="module" src="js/recap.js"></script>
 <script src="js/utils.js"></script>
+</body>
+
+
 </html>
